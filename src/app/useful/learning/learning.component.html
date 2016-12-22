@@ -1,0 +1,258 @@
+<section class="cellblock cellblock-white tutorial-pkasko ng-scope">
+  <h1>Инструкция по основным функциям нового интерфейса Пкаско</h1>
+  <h2>Содержание</h2>
+  <div class="btn-group">
+      <a class="btn btn-primary" href="" ng-click="scrollTo('calc')">Расчет тарифа</a>
+      <a class="btn btn-success" href="" ng-click="scrollTo('commerce')">Коммерческое предложение</a>
+      <!--<a class="btn"  href="" ng-click="scrollTo('history')">История совершенных расчетов</a>-->
+      <a class="btn btn-danger" href="" ng-click="scrollTo('settings')">Настройки</a>
+      <!--<a class="btn"  href="" ng-click="scrollTo('news')">Новости</a>-->
+      <!--<a class="btn"  href="" ng-click="scrollTo('support')">Служба поддержки</a>-->
+  </div>
+  <a name="calc"></a>
+  <h2>Расчет тарифа</h2>
+  <p>
+      Базовыми условиями для расчета по КАСКО являются <span class="label label-info">марка</span>, <span class="label label-info">модель ТС</span>, <span class="label label-info">год выпуска</span>, <span class="label label-info">мощность</span> и <span class="label label-info">страховая сумма</span>. При заполнении этих условий становится активна кнопка <span class="label label-important">Рассчитать стоимость полиса</span>. Без заполнения данных по водителям расчет производится по мультидрайву.
+  </p>
+  <p>
+    <a href="/img/tutorial/calc/1.png" data-lightbox="1.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/calc/1.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+       Если хотя бы одно из условий не заполнено, кнопка не будет активна (в примере ниже не заполнен год выпуска ТС).
+  </p>
+  <p>
+    <a href="/img/tutorial/calc/2.png" data-lightbox="2.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/calc/2.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      Кнопка <span class="label label-important">Рассчитать стоимость полиса</span> неактивна и в случае некорректного заполнения данных по водителям. Разница между возрастом и стажем не может быть менее 18 лет (минимальный возраст получения водительских прав в РФ). Если возраст и стаж заполнены красным шрифтом и кнопка расчета неактивна, проверьте корректность данных по водителю.
+  </p>
+  <p>
+    <a href="/img/tutorial/calc/3.png" data-lightbox="3.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/calc/3.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      Для того, чтобы сделать новый расчет с параметрами, отличными от предыдущего, нужно воспользоваться кнопкой <span class="label label-important">Сбросить все поля<span>.
+  </span></span></p>
+  <p>
+    <a href="/img/tutorial/calc/4.png" data-lightbox="4.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/calc/4.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      Чтобы воспроизвести расчет, сделанный ранее, нужно нажать на значок Время или <span class="label label-important">История</span> (правая часть экрана).
+  </p>
+  <p>
+    <a href="/img/tutorial/calc/5.png" data-lightbox="5.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/calc/5.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      Помимо общих условий (данные по ТС, по водителю) возможен расчет с расширенными условиями (СТОА, рассрочка, франшиза и пр). Для этого нужно развернуть меню <span class="label label-important">Расширенные условия</span> и выбрать необходимые опции.
+  </p>
+  <p>
+    <a href="/img/tutorial/calc/6.png" data-lightbox="6.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/calc/6.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      Расчет можно произвести с учётом скидки от общей страховой премии. Опция <span class="label label-info">Скидка</span> чуть ниже кнопки <span class="label label-important">Рассчитать стоимость полиса</span> (обращаем Ваше внимание, это не скидка из КВ. Скидка из КВ доступна в уточняющем расчете, если такая возможность есть в оригинальном калькуляторе страховой компании).
+  </p>
+  <p>
+    <a href="/img/tutorial/calc/7.png" data-lightbox="7.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/calc/7.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      Для уточнения параметров по конкретной страховой компании нужно нажать на строку с указанием интересующей страховой компании, в правой части появится полный спектр доступных опцией по ней (в расчет вынесены опции, влияющие на страховую премию и/или необходимые при дальнейшем оформлении полиса в системе). Рядом со страховой премией отображаются сервисные сообщения об андеррайтинге, спец.условиях и пр.
+  </p>
+  <p>
+    <a href="/img/tutorial/calc/8.png" data-lightbox="8.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/calc/8.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      Для просмотра доступны все коэффициенты (исключение, страховые компании, которые передают расчеты по вебсервису: Ресо, Уралсиб, Югория и пр.)
+  </p>
+  <p>
+    <a href="/img/tutorial/calc/9.png" data-lightbox="9.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/calc/9.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      Также из уточняющего расчета доступно скачивание котировки и листа расчета при нажатии соответствующих кнопок.
+  </p>
+  <p>
+    <a href="/img/tutorial/calc/10.png" data-lightbox="10.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/calc/10.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      В разделе Расчеты также возможно формирование и скачивание коммерческого предложения, о чём мы расскажем в следующей статье.
+  </p>
+
+
+  <a name="commerce"></a>
+  <h2>Коммерческое предложение</h2>
+  <p>
+      Для работы с коммерческим предложением необходимо произвести расчёт интересующего ТС и нажать на кнопку Коммерческое предложение.
+  </p>
+  <p>
+    <a href="/img/tutorial/kp/1.png" data-lightbox="1.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/kp/1.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      В появившейся форме можно будет выбрать отображаемые в коммерческом предложении опции. Для этого нужно проставить галочки напротив нужных опций.
+  </p>
+  <p>
+    <a href="/img/tutorial/kp/2.png" data-lightbox="2.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/kp/2.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      Также Вы можете настроить параметры коммерческого предложения (расположение на альбомном/книжном листе и пр).
+  </p>
+  <p>
+    <a href="/img/tutorial/kp/3.png" data-lightbox="3.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/kp/3.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      Для добавления номера телефона, айдентики организации и пр. необходимо нажать на кнопку Изменить контактную информацию. Появятся поля для заполнения названии организации, адреса и контактов организации, а также поля для добавления изображений. Для этого нужно сохранить изображение в виде ссылки на веб-ресурс.
+  </p>
+  <p>
+    <a href="/img/tutorial/kp/4.png" data-lightbox="4.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/kp/4.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      Ниже нужно заполнить контакты агента и возможные комментарии.
+  </p>
+  <p>
+    <a href="/img/tutorial/kp/5.png" data-lightbox="5.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/kp/5.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      Получившееся коммерческое предложение можно увидеть, нажав кнопку Предпросмотр. В режиме предпросмотра возможно редактирование текста (для этого нужно навести курсор на нужный фрагмент текста). На рисунку выделены введенные контактные данные.
+  </p>
+  <p>
+    <a href="/img/tutorial/kp/6.png" data-lightbox="6.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/kp/6.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      А также контактные данные агента (т.е. подпись коммерческого предложения).
+  </p>
+  <p>
+    <a href="/img/tutorial/kp/7.png" data-lightbox="7.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/kp/7.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      Вы можете установить контактные данные по умолчанию, нажав на кнопку Сохранить (при этом файл с коммерческим предложением загрузится на компьютер). С помощью кнопки Распечатать Вы можете получить печатную версию Коммерческого предложения.
+  </p>
+  <p>
+    <a href="/img/tutorial/kp/8.png" data-lightbox="8.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/kp/8.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      Если у Вас возникнут вопросы по настройке коммерческого предложения, обратитесь, пожалуйста, в службу поддержки 8(800)500-39-56 (добавочный – 1), support@pkasko.com. Мы будем рады Вам помочь!
+  </p>
+
+  <!--
+  <a name="history"></a>
+  <h2>История совершенных расчетов</h2>
+-->
+  <a name="settings"></a>
+  <h2>Настройки</h2>
+
+  <p>
+      Для изменения параметров расчетов и прочих операций в Пкаско существует раздел Настройки (верхнее меню).
+  </p>
+  <p>
+    <a href="/img/tutorial/conf/1.png" data-lightbox="1.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/conf/1.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      В разделе Профиль содержится информация о вашем логине (кому принадлежит, срок подписки, регион, доступные возможности, прикреплённый номер телефона).
+  </p>
+
+  <p>
+    <a href="/img/tutorial/conf/2.png" data-lightbox="2.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/conf/2.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      В разделе профиль вы также можете изменить пароль (для этого нужно будет ввести действующий пароль, новый пароль с подтверждением).
+  </p>
+
+  <p>
+    <a href="/img/tutorial/conf/3.png" data-lightbox="3.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/conf/3.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      Настройки расчётов и оформления полисов находятся в разделе Калькуляторы.
+  </p>
+
+  <p>
+    <a href="/img/tutorial/conf/4.png" data-lightbox="4.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/conf/4.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      Для того, чтобы включить отдельный калькулятор, нужно нажать напротив его названия галочку. Включенные калькуляторы выделены зеленым цветом.
+  </p>
+
+  <p>
+    <a href="/img/tutorial/conf/5.png" data-lightbox="5.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/conf/5.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      Вы можете включить или выключить все калькуляторы одновременно, воспользовавшись соответствующими кнопками.
+  </p>
+
+  <p>
+    <a href="/img/tutorial/conf/6.png" data-lightbox="6.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/conf/6.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      В разделе общие настройки можно выбрать опции, применимые для всех расчётов по всем калькуляторам (СТОА, рассрочка, мульидрайв, франшиза и пр).
+  </p>
+
+  <p>
+    <a href="/img/tutorial/conf/7.png" data-lightbox="7.png" class="thumbnail" data-title="pkasko">
+      <img src="/img/tutorial/conf/7.png" width="300" alt="pkasko" class="img-polaroid">
+    </a>
+  </p>
+  <p>
+      По некоторым страховым компаниям требуется указание индивидуальных настроек для расчётов. Для этого нужно выбрать значок настроек напротив названия страховой компании и заполнить данные.
+       </p>
+       <div class="alert alert-error">
+      	<p>
+          Часть настроек необходимо получать через службу технической поддержки, поскольку логин и пароль от b2b могут не подходить для авторизации в Пкаско. Ниже список данных, необходимых для запроса в службу технической поддержки Пкаско:
+        </p>
+        <ul>
+            <li>СК "Ресо" - Ваш индивидуальный код агента, состоящий из 7-8 цифр (Вы найдете его в любом из оформленных Вами полисов в поле "представитель страховщика").</li>
+            <li>СК "Ренессанс" - Наименование юр.лица по которому заключен договор с компанией, номер договора и дата заключения, контакты куратора в СК Ренессанс (ФИО, номер телефона, адрес электронной почты).</li>
+            <li>СК "ВСК" - Наименование юр.лица по которому заключен договор с компанией, номер договора и дата заключения.</li>
+            <li>СК "Согласие" – Ваш ИКП</li>
+            <li>СК "Либерти" - Наименование юр.лица по которому заключен договор с компанией, номер договора и дата заключения</li>
+            <li>СК "Росгосстрах" - логин и пароль, полученные после подписания дополнительного соглашения (находятся в разделе Документы/Росгосстрах/Дополнительная информация).</li>
+        </ul>
+       </div>
+
+  <p><br><br></p>
+  <p><strong>Если у Вас возникнут вопросы, обратитесь, пожалуйста, в службу поддержки 8(800)500-39-56 (добавочный – 1), support@pkasko.com. Мы будем рады Вам помочь!</strong></p>
+  <p>Администрация проекта <a href="/">Пкаско</a></p>
+</section>

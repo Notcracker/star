@@ -1,0 +1,24 @@
+blockquote {
+  font-size: 14px;
+}
+
+.text-center {
+  box-shadow: inset 100px 0px 90px #70b7ff, inset -100px 0px 90px #70b7ff;
+  margin-top: -30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 2px;
+  margin-bottom: 40px;
+  /*margin-left: -40px;*/
+  /*margin-right: -53px;*/
+}
+
+div h3 {
+  font-size: 20px;
+}
+
+.answer-block {
+  box-shadow: 0px 2px 15px #4b658e;
+  padding-top: 3px;
+  padding-left: 5px;
+}

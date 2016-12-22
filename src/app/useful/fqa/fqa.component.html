@@ -1,0 +1,10 @@
+<section class="cellblock">
+  <h2  class="text-center" >Часто задаваемые вопросы</h2>
+
+  <div *ngFor="let question of fqa" class="answer-block">
+    <div class="question">
+      <h3>— {{question.question}}</h3>
+    </div>
+    <blockquote>{{question.answer}}</blockquote>
+  </div>
+</section>

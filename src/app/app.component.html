@@ -1,3 +1,181 @@
-<h1>
-  {{title}}
-</h1>
+<div class="jumbotron">
+
+</div>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="fixed-navbar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand"><img alt="Dispute Bills"></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav hidden-xs">
+          <li class="text-center"><a routerLink="policy" routerLinkActive="active">Полисы</a></li>
+          <li class="text-center"><a routerLink="profile" routerLinkActive="active">БСО</a></li>
+          <li class="text-center"><a routerLink="policy" routerLinkActive="active">Полезное</a></li>
+          <li class="text-center"><a routerLink="policy" routerLinkActive="active">Новости</a></li>
+          <li class="text-center"><a routerLink="policy" routerLinkActive="active"> Поддержка</a></li>
+          <li class="text-center"><a routerLink="policy" routerLinkActive="active">CRM</a></li>
+        </ul>
+        <ul id="accordion" class="panel-group nav navbar-nav navbar-right visible-xs">
+          <li>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+              Полисы
+              <b class="caret"></b>
+            </a>
+            <ul id="collapse1" class="panel-collapse collapse">
+              <div>
+                <a (click)="changeTabHandler('policy')" routerLink="/policy/all" routerLinkActive="active">Полисы</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('policy')" routerLink="/policy/clients" routerLinkActive="active">Клиенты</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('policy')" routerLink="/policy/calendar" routerLinkActive="active">Календарь</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('policy')" routerLink="/policy/kasko" routerLinkActive="active">КАСКО</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('policy')" routerLink="/policy/osago" routerLinkActive="active">ОСАГО</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('policy')" routerLink="/policy/ifl" routerLinkActive="active">ИФЛ</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('policy')" routerLink="/policy/pus" routerLinkActive="active">ПУС</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('policy')" routerLink="/policy/losses" routerLinkActive="active">Убытки</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('policy')" routerLink="/policy/blacklist" routerLinkActive="active">Черный Список</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('policy')" routerLink="/policy/docs" routerLinkActive="active">Документы</a>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+              БСО
+              <b class="caret"></b>
+            </a>
+            <ul id="collapse2" class="panel-collapse collapse">
+              <div>
+                <a (click)="changeTabHandler('bso')" routerLink="/bso/main" routerLinkActive="active">БСО</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('bso')" routerLink="/bso/requests" routerLinkActive="active">Заявки</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('bso')" routerLink="/bso/reports" routerLinkActive="active">Отчеты</a>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+              Полезное
+              <b class="caret"></b>
+            </a>
+            <ul id="collapse3" class="panel-collapse collapse">
+              <div>
+                <a (click)="changeTabHandler('useful')" routerLink="/useful/forum" routerLinkActive="active">Форум</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('useful')" routerLink="/useful/fqa" routerLinkActive="active">Вопросы и Ответы</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('useful')" routerLink="/useful/learning" routerLinkActive="active">Обучение</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('useful')" routerLink="/useful/contacts" routerLinkActive="active">Контактная информация</a>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+              Новости
+              <b class="caret"></b>
+            </a>
+            <ul id="collapse4" class="panel-collapse collapse">
+              <div>
+                <a (click)="changeTabHandler('news')" routerLink="/news/insurance" routerLinkActive="active">Новости рынка страхования</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('news')" routerLink="/news/pkasko" routerLinkActive="active">Новости Пкаско</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('news')" routerLink="/news/inner" routerLinkActive="active">Внутренние новости</a>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <a (click)="changeTabHandler('support')" routerLink="/support" routerLinkActive="active">
+              Поддержка
+            </a>
+          </li>
+          <li>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+              CRM
+              <b class="caret"></b>
+            </a>
+            <ul id="collapse6" class="panel-collapse collapse">
+              <div>
+                <a (click)="changeTabHandler('crm')" routerLink="/crm/contractor" routerLinkActive="active">Контрагент</a>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+              Профиль
+              <b class="caret"></b>
+            </a>
+            <ul id="collapse7" class="panel-collapse collapse">
+              <div>
+                <a (click)="changeTabHandler('profile')" routerLink="/profile/my" routerLinkActive="active">Профиль</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('profile')" routerLink="/profile/calculators" routerLinkActive="active">Калькуляторы</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('profile')" routerLink="/profile/staff" routerLinkActive="active">Сотрудники</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('profile')" routerLink="/profile/operations" routerLinkActive="active">Операции</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('profile')" routerLink="/profile/categories" routerLinkActive="active">Категории</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('profile')" routerLink="/profile/units" routerLinkActive="active">Подразделения</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('profile')" routerLink="/profile/insurance" routerLinkActive="active">Компании</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('profile')" routerLink="/profile/companies" routerLinkActive="active">Банки</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('profile')" routerLink="/profile/banks" routerLinkActive="active">Внешний вид</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('profile')" routerLink="/profile/appearance" routerLinkActive="active">СБ</a>
+              </div>
+              <div>
+                <a (click)="changeTabHandler('profile')" routerLink="/profile/security" routerLinkActive="active">СБ</a>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <a (click)="logout(); changeTabHandler('landing')" routerLinkActive="active" role="button">
+              Выйти
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

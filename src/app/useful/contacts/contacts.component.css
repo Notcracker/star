@@ -1,0 +1,14 @@
+.cellblock-white {
+  box-shadow: 0px 5px 20px #4b658e;
+  padding-left: 20px;
+  margin-top: -1%;
+  min-height: 90vh;
+  padding-top: 5px;
+}
+  h1 {
+    box-shadow: inset 100px 0px 90px #70b7ff, inset -100px 0px 90px #70b7ff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: -20px;
+    margin-top: -7px;
+  }
