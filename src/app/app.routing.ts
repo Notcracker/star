@@ -4,10 +4,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { WrongComponent } from './wrong.component'
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'policy', pathMatch: 'full'},
-  { path: 'policy', loadChildren: 'app/policy/policy.module#PolicyModule'  },
-  { path: 'profile', loadChildren: 'app/profile/profile.module#ProfileModule' },
-  {path: '**',  component: WrongComponent }
+  { path: '', redirectTo: 'main', pathMatch: 'full'},
+  { path: 'main', loadChildren: 'app/main/main.module#MainModule'  },
+  { path: 'predictions', loadChildren: 'app/predictions/predictions.module#PredictionsModule' },
+  { path: 'useful', loadChildren: 'app/useful/useful.module#UsefulModule'},
+  { path: '**',  component: WrongComponent }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes);

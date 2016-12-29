@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FqaService } from './fqa.service';
 
 @Component({
-   
-  templateUrl: 'fqa.component.html',
-  styleUrls: [ 'fqa.component.css' ],
+
+  templateUrl: './fqa.component.html',
+  styleUrls: [ './fqa.component.css' ],
   providers: [ FqaService ],
 })
 

@@ -14,7 +14,7 @@ import { routing }       from './useful.routing';
     ContactsComponent,
     ForumComponent,
     FqaComponent,
-    LearningComponent 
+    LearningComponent
   ],
 })
-export class CrisisModule {}
+export class UsefulModule {}
